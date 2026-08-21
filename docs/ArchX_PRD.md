@@ -2,7 +2,7 @@
 
 ## The Ideation
 
-We create many diagrams (Ex: Class,Sequence ,ERD etc) while try developing a system architecture and with every new entity or relationships we have to draw and update the existing diagram manually which is such a time taking process.
+We create many diagrams (e.g., class, sequence, and ER diagrams) while developing a system architecture. Whenever we add a new entity or relationship, we have to draw and update the existing diagram manually, which is a time-consuming process.
 
 Here we are with ArchX  and its AI powered tool  to build a your diagrams in seconds to create actual diagrams or blueprint of your system architecture. by understanding your requirements we will generate and update the diagrams for you. 
 
