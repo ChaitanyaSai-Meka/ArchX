@@ -30,7 +30,30 @@ Our goal is to reduce the overall time taken to create system architecture diagr
 3. modifying the existing diagrams for any new requirements instead of creating new diagrams to save context or llm's tokens 
 
 
-## Tech Stacks (yet to be decided)
+## Tech Stacks
+
+Based on the requirements for a real-time, AI-powered diagram generation and editing tool, here is the recommended modern tech stack:
+
+### Frontend (Client-Side)
+- **Framework:** Next.js (App Router) + React 18
+- **Language:** TypeScript (for type safety and reducing bugs)
+- **Styling & UI:** Tailwind CSS + shadcn/ui (for premium, accessible, and fast UI components) + Framer Motion (for fluid UI transitions)
+- **Diagram Engine:** `mermaid.js` (for parsing and rendering LLM-generated code) and `@excalidraw/excalidraw` (for manual whiteboard editing capabilities)
+- **State Management:** Zustand (for lightweight global state) + TanStack Query (for API caching and data fetching)
+
+### Backend (Server-Side)
+- **Framework:** Node.js + Express (as outlined in the architecture diagrams)
+- **Language:** TypeScript
+- **Real-time Streaming:** Server-Sent Events (SSE) (crucial for streaming LLM responses so the user isn't waiting on a long loading screen)
+- **Authentication:** Custom Auth (JWT/Session) alongside OAuth (e.g., GitHub, Google)
+
+### Database & ORM
+- **Database:** PostgreSQL (highly relational, perfect for connecting Users -> Projects -> Chats -> Blueprints)
+- **ORM:** Prisma ORM (provides industry-standard type-safe database schemas and migrations)
+
+### AI & Integration
+- **Model:** OpenAI API (GPT-4o for fast and accurate structural diagram code generation)
+- **AI Tooling:** *(To be decided later by the project team)*
 
 ## Entity Relationship Diagrams & Data Model
 
@@ -53,3 +76,7 @@ The diagram below visually maps out how the six core entities interact. Notice h
 For a deeper dive into the system's class structure, you can reference our handwritten architectural diagrams:
 - [View ArchX Class Diagrams (Current)](../assets/diagrams/ArchX%20Class%20diagrams.pdf)
 - [View ArchX Class Diagrams (V0 / Initial Draft)](../assets/diagrams/ArchX%20Class%20diagrams_V0.pdf)
+
+### Sequence Diagram
+
+![AI Generation Sequence Diagram](../assets/diagrams/ai_generation_sequence.jpeg)
