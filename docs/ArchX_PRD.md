@@ -53,3 +53,7 @@ The diagram below visually maps out how the six core entities interact. Notice h
 For a deeper dive into the system's class structure, you can reference our handwritten architectural diagrams:
 - [View ArchX Class Diagrams (Current)](../assets/diagrams/ArchX%20Class%20diagrams.pdf)
 - [View ArchX Class Diagrams (V0 / Initial Draft)](../assets/diagrams/ArchX%20Class%20diagrams_V0.pdf)
+
+### Sequence Diagram
+
+![AI Generation Sequence Diagram](../assets/diagrams/ai_generation_sequence.jpeg)
